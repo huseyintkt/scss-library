@@ -1,0 +1,9 @@
+﻿/*
+* @include css3-prefix4('border-radius', $radius); 
+*/
+@mixin css3-prefix4($property, $value) {
+    -webkit-#{$property}: #{$value};
+    -moz-#{$property}: #{$value};
+    -o-#{$property}: #{$value};
+    #{$property}: #{$value};
+}

@@ -1,0 +1,7 @@
+﻿/*
+* @include css3-prefix2('border-radius', $radius); 
+*/
+@mixin css3-prefix2($property, $value) {
+    -webkit-#{$property}: #{$value};
+    #{$property}: #{$value};
+}

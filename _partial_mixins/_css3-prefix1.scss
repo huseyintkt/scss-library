@@ -1,0 +1,6 @@
+﻿/*
+* @include css3-prefix1('color', $color); 
+*/
+@mixin css3-prefix1($property, $value) {
+    #{$property}: #{$value};
+}
