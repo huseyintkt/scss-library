@@ -1,0 +1,35 @@
+﻿
+// border-radius
+@mixin border-radius($border-radius,$dir) {
+    @if($dir == all ) {
+        @include css3-prefix3(border-radius,$border-radius);
+    }
+    @else if($dir == top) {
+        @include css3-prefix3(border-top-left-radius,$border-radius);
+        @include css3-prefix3(border-top-right-radius,$border-radius);
+    }
+    @else if($dir == bottom) {
+        @include css3-prefix3(border-bottom-left-radius,$border-radius);
+        @include css3-prefix3(border-bottom-right-radius,$border-radius);
+    }
+    @else if($dir == right) {
+        @include css3-prefix3(border-top-right-radius,$border-radius);
+        @include css3-prefix3(border-bottom-right-radius,$border-radius);
+    }
+    @else if($dir == left) {
+        @include css3-prefix3(border-top-left-radius,$border-radius);
+        @include css3-prefix3(border-bottom-left-radius,$border-radius);
+    }
+    @else if($dir == top-left) {
+        @include css3-prefix3(border-top-left-radius,$border-radius);
+    }
+    @else if($dir == top-right) {
+        @include css3-prefix3(border-top-right-radius,$border-radius);
+    }
+    @else if($dir == bottom-left) {
+        @include css3-prefix3(border-bottom-left-radius,$border-radius);
+    }
+    @else if ($dir == bottom-right) {
+        @include css3-prefix3(border-bottom-right-radius,$border-radius);
+    }
+}
