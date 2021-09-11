@@ -1,0 +1,5 @@
+﻿// word-wrap: break-word / normal;
+@mixin word-wrap($value) {
+     -ms-word-wrap: $value;
+     word-wrap: $value;
+}

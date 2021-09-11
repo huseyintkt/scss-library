@@ -1,0 +1,8 @@
+﻿// transition
+@mixin transition($property, $duration, $timing-function, $delay: "") {
+    @if ($delay == "") {
+        @include css3-prefix4(transition, $property $duration $timing-function);
+    } @else {
+        @include css3-prefix4(transition, $property $duration $timing-function $delay);
+    }
+}

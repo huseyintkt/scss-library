@@ -1,0 +1,4 @@
+﻿// Text Shadow
+@mixin text-shadow($x, $y, $blur, $color) {
+    @include css3-prefix1("text-shadow", $x $y $blur $color);
+}

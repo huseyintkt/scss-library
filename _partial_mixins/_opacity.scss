@@ -1,0 +1,9 @@
+﻿// Opacity
+@mixin opacity($opacity) {
+    /*IE8*/
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=" + $opacity * 100 + ")";
+    /*IE 5-7*/
+    filter: alpha(opacity=$opacity * 100);
+    /*Modern Browsers*/
+    @include css3-prefix1("opacity", $opacity);
+}
