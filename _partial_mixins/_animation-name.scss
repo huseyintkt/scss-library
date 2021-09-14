@@ -1,0 +1,4 @@
+﻿//animation-name: example;
+@mixin animation-name($animation-name) {
+    @include css3-prefix4(animation-name, $animation-name);
+}

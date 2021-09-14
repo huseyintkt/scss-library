@@ -1,0 +1,4 @@
+﻿//animation-delay: 2s;
+@mixin animation-delay($animation-delay) {
+    @include css3-prefix4(animation-delay, $animation-delay);
+}

@@ -1,0 +1,4 @@
+﻿//animation-duration: 5s;
+@mixin animation-duration($animation-duration) {
+    @include css3-prefix4(animation-duration, $animation-duration);
+}

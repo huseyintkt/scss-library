@@ -1,0 +1,8 @@
+﻿/*
+ * animation-direction:normal , reverse , alternate , alternate-reverse 
+ * animation-direction:reverse             
+ * animation-direction: alternate;
+*/
+@mixin animation-direction($animation-direction) {
+    @include css3-prefix4(animation-direction, $animation-direction);
+}

@@ -1,0 +1,7 @@
+﻿/*
+* animation-iteration-count: 3;      
+* animation-iteration-count: infinite;
+*/
+@mixin animation-iteration-count($animation-iteration-count) {
+    @include css3-prefix4(animation-iteration-count, $animation-iteration-count);
+}

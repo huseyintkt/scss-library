@@ -1,0 +1,4 @@
+﻿// animation-fill-mode: none , forwards , backwards , both
+@mixin animation-fill-mode($animation-fill-mode) {
+    @include css3-prefix4(animation-fill-mode, $animation-fill-mode);
+}

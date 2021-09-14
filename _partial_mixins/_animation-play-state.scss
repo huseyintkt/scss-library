@@ -1,0 +1,4 @@
+﻿// animation-play-state: paused , running
+@mixin animation-play-state($animation-play-state) {
+    @include css3-prefix4(animation-play-state, $animation-play-state);
+}

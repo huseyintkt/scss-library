@@ -1,0 +1,4 @@
+﻿//animation-timing-function: ease-in-out , linear , ease , ease-in , ease-out
+@mixin animation-timing-function($animation-timing-function) {
+    @include css3-prefix4(animation-timing-function, $animation-timing-function);
+}
