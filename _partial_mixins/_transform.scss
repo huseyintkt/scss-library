@@ -1,0 +1,21 @@
+﻿/*
+* transform
+*/
+@mixin transform-translate($x: 0px, $y: 0px) {
+    @include css3-prefix5(transform, translate($x, $y));
+}
+
+//transform: scale(.5,.9);
+@mixin transform-scale($x: 0, $y: 0) {
+    @include css3-prefix5(transform, scale($x, $y));
+}
+
+//transform: rotate(45deg);
+@mixin transform-rotate($x: 0deg) {
+    @include css3-prefix5(transform, rotate($x));
+}
+
+//transform: skew(20deg,30deg);
+@mixin transform-skew($x: 0, $y: 0) {
+    @include css3-prefix5(transform, skew($x, $y));
+}

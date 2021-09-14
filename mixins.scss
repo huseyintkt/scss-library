@@ -3,3 +3,33 @@
 @import "_partial_mixins/css3-prefix3";
 @import "_partial_mixins/css3-prefix2";
 @import "_partial_mixins/css3-prefix1";
+
+@import "_partial_mixins/animation";
+@import "_partial_mixins/animation-name";
+@import "_partial_mixins/animation-duration";
+@import "_partial_mixins/animation-delay";
+@import "_partial_mixins/animation-iteration-count";
+@import "_partial_mixins/animation-direction";
+@import "_partial_mixins/animation-timing-function";
+@import "_partial_mixins/animation-play-state";
+@import "_partial_mixins/animation-fill-mode";
+@import "_partial_mixins/keyframes";
+
+@import "_partial_mixins/border-radius";
+@import "_partial_mixins/box-shadow";
+@import "_partial_mixins/box-sizing";
+@import "_partial_mixins/columns";
+@import "_partial_mixins/gradient";
+@import "_partial_mixins/filter";
+@import "_partial_mixins/opacity";
+@import "_partial_mixins/text-shadow";
+@import "_partial_mixins/transition";
+@import "_partial_mixins/transform";
+@import "_partial_mixins/word-break";
+@import "_partial_mixins/word-wrap";
+
+@import "_partial_mixins/clearfix";
+@import "_partial_mixins/ellipsis";
+@import "_partial_mixins/media-query";
+@import "_partial_mixins/placeholder";
+@import "_partial_mixins/selection";
