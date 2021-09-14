@@ -1,0 +1,101 @@
+﻿// Media query breakpoint
+
+//Example use:
+
+/*
+* div {
+*     color: yellow;
+*     @include media-max-width-480px() {
+*         color: red;
+*     }
+* }
+* div {
+*     width: 800px;
+* }
+* 
+* @media screen and (max-width: 480px) {
+*     div {
+*         width: 500px;
+*         color: red;
+*     }
+* }
+*/
+@mixin media-max-width-1400px {
+    @media screen and (max-width: 1400px) {
+        & {
+            @content;
+        }
+    }
+}
+
+@mixin media-max-width-1200px {
+    @media screen and (max-width: 1200px) {
+        & {
+            @content;
+        }
+    }
+}
+
+@mixin media-max-width-992px {
+    @media screen and (max-width: 992px) {
+        & {
+            @content;
+        }
+    }
+}
+
+@mixin media-max-width-768px {
+    @media screen and (max-width: 768px) {
+        & {
+            @content;
+        }
+    }
+}
+
+@mixin media-max-width-480px {
+    @media screen and (max-width: 480px) {
+        & {
+            @content;
+        }
+    }
+}
+
+@mixin media-min-width-1400px {
+    @media screen and (min-width: 1400px) {
+        & {
+            @content;
+        }
+    }
+}
+
+@mixin media-min-width-1200px {
+    @media screen and (min-width: 1200px) {
+        & {
+            @content;
+        }
+    }
+}
+
+@mixin media-min-width-992px {
+    @media screen and (min-width: 992px) {
+        & {
+            @content;
+        }
+    }
+}
+
+@mixin media-min-width-768px {
+    @media screen and (min-width: 768px) {
+        & {
+            @content;
+        }
+    }
+}
+
+@mixin media-min-width-480px {
+    @media screen and (min-width: 480px) {
+        & {
+            @content;
+        }
+    }
+}
