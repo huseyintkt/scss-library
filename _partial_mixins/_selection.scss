@@ -1,0 +1,28 @@
+﻿/*
+* example use:
+* 
+* div{    
+*     @include selection{
+*         color:red;
+*     }
+* }
+* 
+* div::selection {
+*   color: red; 
+* }
+* div::-moz-selection {
+*   color: red; 
+* }
+*/
+@mixin selection {
+    &::-moz-selection {
+        @content;
+    }
+    &::selection {
+        @content;
+    }
+
+    &::-moz-selection {
+        @content;
+    }
+}

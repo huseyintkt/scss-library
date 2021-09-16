@@ -1,0 +1,28 @@
+﻿/*
+* example use:
+* 
+* input .xxx{
+*     @include placeholder{
+*         color:red;
+*     }
+* }
+* 
+* input .xxx::-webkit-input-placeholder { color: red; }
+* input .xxx::-moz-placeholder { color: red; }
+* input .xxx:-moz-placeholder { color: red; }
+* input .xxx:-ms-input-placeholder { color: red; }
+*/
+@mixin placeholder {
+    &::-webkit-input-placeholder {
+        @content;
+    }
+    &::-moz-placeholder {
+        @content;
+    }
+    &:-moz-placeholder {
+        @content;
+    }
+    &:-ms-input-placeholder {
+        @content;
+    }
+}
