@@ -1,0 +1,84 @@
+﻿/*
+* example use:
+* 
+* @include filter(blur(20px));
+* 
+* div {
+*   -webkit-filter: blur(20px);
+*   -moz-filter: blur(20px);
+*   -o-filter: blur(20px);
+*   filter: blur(20px); 
+* }
+* 
+* @include filter-blur(40px);
+* 
+* div {
+*   -webkit-filter: blur(40px);
+*   filter: blur(40px); 
+* }
+*/
+
+// filter
+@mixin filter($value) {
+    @include css3-prefix4(filter, $value);
+}
+
+// Blur an element
+@mixin filter-blur($value) {
+    -webkit-filter: blur($value); // Add value in px
+    filter: blur($value);
+}
+
+// Add grayscale filter to an element
+@mixin filter-grayscale($value) {
+    -webkit-filter: grayscale($value); // Add value in %
+    filter: grayscale($value);
+}
+
+// Add sepia filter to an element
+@mixin filter-sepia($value) {
+    -webkit-filter: sepia($value); // Add value in %
+    filter: sepia($value);
+}
+
+// Add saturation filter to an element
+@mixin filter-saturate($value) {
+    -webkit-filter: saturate($value); //Add value in % or whole number
+    filter: saturate($value);
+}
+
+// Rotate hue of an element
+@mixin filter-hueRotate($value) {
+    -webkit-filter: hue-rotate($value); //Add value in deg
+    filter: hue-rotate($value);
+}
+
+// Invert colors of an element
+@mixin filter-invert($value) {
+    -webkit-filter: invert($value); //Add value in %
+    filter: invert($value);
+}
+
+// Set opacity of an element
+@mixin filter-opacity($value) {
+    -webkit-filter: opacity($value); //Add value in %
+    filter: opacity($value);
+}
+
+// Set brightness of an element
+@mixin filter-brightness($value) {
+    -webkit-filter: brightness($value); //Add value in %
+    filter: brightness($value);
+}
+
+// Set contrast of an element
+@mixin filter-contrast($value) {
+    -webkit-filter: contrast($value); //Add value in %
+    filter: contrast($value);
+}
+
+// Add drop shadow filter to an element
+@mixin filter-dropShadow($value) {
+    -webkit-filter: drop-shadow($value);
+    filter: drop-shadow($value);
+}

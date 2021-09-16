@@ -1,0 +1,29 @@
+﻿// columns
+@mixin columns($column-width, $column-count) {
+    @include css3-prefix3("columns", $column-width $column-count);
+}
+
+// column-width: length;
+@mixin column-width($column-width) {
+    @include css3-prefix3("column-width", $column-width);
+}
+
+// column-count: number;
+@mixin column-count($column-count) {
+    @include css3-prefix3("column-count", $column-count);
+}
+
+// column-gap: length/normal;
+@mixin column-gap($column-gap) {
+    @include css3-prefix3("column-gap", $column-gap);
+}
+
+// column-span: 1/all;
+@mixin column-span($column-span) {
+    @include css3-prefix3("column-span", $column-span);
+}
+
+// column-rule: column-rule-width column-rule-style column-rule-color;
+@mixin column-rule($column-rule) {
+    @include css3-prefix3("column-rule", $column-rule);
+}
